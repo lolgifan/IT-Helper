@@ -17,14 +17,11 @@
 ## 📋 Table of Contents
 
 - [Features](#-features)
-- [Screenshots](#-screenshots)
 - [Installation](#-installation)
 - [Usage](#-usage)
 - [Build from Source](#-build-from-source)
 - [Technical Details](#-technical-details)
 - [Project Structure](#-project-structure)
-- [Contributing](#-contributing)
-- [License](#-license)
 - [Support](#-support)
 
 ---
@@ -277,12 +274,6 @@ python src/main.py
 
 ---
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
 ## 🆘 Support
 
 ### 🐛 Found a Bug?
@@ -301,18 +292,3 @@ We'd love to hear your ideas! [Create a feature request](../../issues) and descr
 - What you'd like to see
 - Why it would be useful
 - How it should work
-
-### 📧 Contact
-
-- **Issues**: [GitHub Issues](../../issues)
-- **Discussions**: [GitHub Discussions](../../discussions)
-
----
-
-<div align="center">
-
-**⭐ If you find IT Helper useful, please give it a star! ⭐**
-
-Made with ❤️ for the IT community
-
-</div>
