@@ -76,12 +76,6 @@
 
 ---
 
-## 📸 Screenshots
-
-_Screenshots and demo GIFs will be added here to showcase the application interface and features_
-
----
-
 ## 🚀 Installation
 
 ### Option 1: Download Executable (Recommended)
