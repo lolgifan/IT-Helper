@@ -1,149 +1,318 @@
-# IT Helper
+# 🛠️ IT Helper
 
-A comprehensive IT toolkit with multiple utilities for network analysis and system management.
+<div align="center">
 
-## Features
+**A comprehensive IT toolkit with multiple utilities for network analysis and system management**
 
-### 🏠 Home Screen
+![Windows](https://img.shields.io/badge/Windows-10%2F11-blue?logo=windows&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3.8+-green?logo=python&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+![Build](https://img.shields.io/badge/Build-Passing-brightgreen)
+![Version](https://img.shields.io/badge/Version-1.0.0-blue)
 
-- Clean, modern interface with utility buttons
+</div>
+
+---
+
+## 📋 Table of Contents
+
+- [Features](#-features)
+- [Screenshots](#-screenshots)
+- [Installation](#-installation)
+- [Usage](#-usage)
+- [Build from Source](#-build-from-source)
+- [Technical Details](#-technical-details)
+- [Project Structure](#-project-structure)
+- [Contributing](#-contributing)
+- [License](#-license)
+- [Support](#-support)
+
+---
+
+## ✨ Features
+
+### 🏠 **Modern Home Screen**
+
+- Clean, intuitive interface with utility buttons
 - Easy navigation to all available tools
-- Sidebar hidden on home screen for maximum visibility
+- Responsive layout with professional dark theme
 
-### 📶 Wi-Fi Scanner
+### 📶 **Wi-Fi Scanner**
 
-- Real-time wireless network scanning
-- Signal strength analysis with visual bars
-- Channel usage visualization (2.4GHz and 5GHz)
-- Network details with encryption information
-- Export functionality to CSV
-- Configurable refresh rates
+- **Real-time Network Discovery**: Continuously scans for available wireless networks
+- **Signal Analysis**: Visual signal strength bars with detailed metrics
+- **Channel Visualization**: 2.4GHz and 5GHz channel usage analysis
+- **Security Information**: Encryption type and security details
+- **Export Capabilities**: Save results to CSV format
+- **Customizable Refresh**: Adjustable scan intervals
 
-### 📊 Wi-Fi Charts
+### 📊 **Wi-Fi Signal Charts**
 
-- Historical signal strength plotting
-- Multi-network comparison
-- Auto-refresh capabilities
-- Interactive network selection
-- Time-based analysis
+- **Historical Tracking**: Plot signal strength over time
+- **Multi-Network Comparison**: Compare multiple networks simultaneously
+- **Interactive Selection**: Click to select/deselect networks for charting
+- **Auto-Refresh**: Continuous monitoring with configurable intervals
+- **Professional Graphs**: Matplotlib-powered visualization
 
-### 💾 Disk Space Analyzer
+### 💾 **Disk Space Analyzer**
 
-- Drive space information display
-- Recursive directory analysis
-- Tree view with sortable columns
-- Context menu operations (Open, Properties, Copy Path)
-- File grouping options
-- Progress tracking for large scans
+- **Drive Analysis**: Complete storage space breakdown
+- **Directory Tree**: Hierarchical view of folder structures
+- **Sortable Results**: Sort by size, name, or file count
+- **Context Operations**: Right-click for file operations
+- **Progress Tracking**: Real-time scan progress for large directories
+- **Performance Optimized**: Efficient scanning algorithms
 
-## File Structure
+### 🖥️ **System Information**
 
-```
-IT Helper/
-├── src/                    # Source code directory
-│   ├── main.py             # Main application entry point
-│   ├── wifi_scanner_module.py  # Wi-Fi scanning functionality
-│   ├── wifi_charts_module.py   # Wi-Fi signal history charts
-│   ├── disk_analyzer_module.py # Disk space analysis
-│   ├── system_info_module.py   # System information utility
-│   ├── network_scanner_module.py # Network scanning utility
-│   ├── shared_components.py    # Common UI components
-│   ├── wifi_utilities.py       # Wi-Fi scanning backend
-│   ├── disk_utilities.py       # Disk analysis backend
-│   └── logger.py               # Logging utility
-├── build_tools/            # Build and compilation tools
-│   ├── build.py            # Main build script
-│   ├── build.bat           # Windows build batch file
-│   ├── build_config.py     # Build configuration
-│   ├── IT Helper.spec      # PyInstaller specification
-│   └── BUILD_INSTRUCTIONS.md # Build documentation
-├── dist/                   # Distribution directory (generated)
-├── build.bat               # Quick build launcher
-├── requirements.txt        # Python dependencies
-└── README.md              # This file
-```
+- **Hardware Details**: CPU, RAM, GPU specifications
+- **Operating System**: Detailed OS information
+- **Network Configuration**: IP addresses and network settings
+- **Storage Overview**: All connected drives information
 
-## Requirements
+### 🌐 **Network Scanner**
+
+- **Network Discovery**: Scan local network for active devices
+- **Device Information**: IP addresses, MAC addresses, hostnames
+- **Port Scanning**: Identify open ports and services
+- **Network Mapping**: Visual representation of network topology
+
+---
+
+## 📸 Screenshots
+
+_Screenshots and demo GIFs will be added here to showcase the application interface and features_
+
+---
+
+## 🚀 Installation
+
+### Option 1: Download Executable (Recommended)
+
+1. Download the latest release from the [Releases](../../releases) page
+2. Run `IT Helper.exe` - no installation required!
+3. The application is portable and self-contained
+
+### Option 2: Run from Source
+
+**Prerequisites:**
 
 - Python 3.8 or higher
-- PySide6
-- matplotlib
-- numpy
-- Windows 10/11 (for WiFi scanning and disk analysis)
+- Windows 10/11 (required for Wi-Fi and system analysis features)
 
-## Installation
-
-1. Install Python dependencies:
+**Installation Steps:**
 
 ```bash
-pip install PySide6 matplotlib numpy
-```
+# Clone the repository
+git clone https://github.com/yourusername/it-helper.git
+cd it-helper
 
-2. Run the application:
+# Install dependencies
+pip install -r requirements.txt
 
-```bash
+# Run the application
 python src/main.py
 ```
 
-Or build the standalone executable:
+---
 
-```bash
-# Quick build (Windows)
-build.bat
+## 📖 Usage
 
-# Manual build
-cd build_tools
-python build.py
-```
+### Getting Started
 
-## Navigation
-
-- **Home Screen**: No sidebar visible, clean interface with utility buttons
-- **Utility Screens**: Sidebar visible with navigation options
-- **🏠 Home Button**: Returns to home screen from any utility
-- **Direct Navigation**: Click utility buttons in sidebar to switch between tools
-
-## Key Improvements
-
-- **Modular Architecture**: Each utility is in its own module for better organization
-- **Shared Components**: Common UI elements are reused across modules
-- **Clean Code Structure**: Removed unused code and comments
-- **Better File Names**: More descriptive and readable file names
-- **Consistent UI**: Dark theme throughout with consistent styling
-- **Proper Documentation**: Clear code comments and structure
-- **Organized File Structure**: Source code separated from build tools
-- **Optimized Logging**: Configurable logging system replaces print statements
-- **Performance Optimizations**: Lazy loading and efficient resource management
-
-## Usage
+1. Launch IT Helper
+2. Choose a utility from the home screen
+3. Use the sidebar to navigate between tools
+4. Click the 🏠 Home button to return to the main screen
 
 ### Wi-Fi Scanner
 
-1. Navigate to Wi-Fi Scanner from home screen
-2. Networks are automatically scanned in real-time
-3. Click on column headers to sort networks
+```
+1. Navigate to Wi-Fi Scanner
+2. View real-time network list with signal strengths
+3. Click column headers to sort results
 4. Double-click networks for detailed information
-5. Use controls panel to adjust refresh rate or export data
+5. Export results using the "Export to CSV" button
+```
 
 ### Wi-Fi Charts
 
-1. Navigate to Wi-Fi Charts from home screen
-2. Select networks from the list to chart their signal history
-3. Charts update automatically when auto-refresh is enabled
-4. Use manual refresh button to update data immediately
+```
+1. Open Wi-Fi Charts utility
+2. Select networks from the list to monitor
+3. Enable auto-refresh for continuous monitoring
+4. Analyze signal patterns over time
+```
 
 ### Disk Analyzer
 
-1. Navigate to Disk Space Analyzer from home screen
-2. Select a drive or choose a custom folder
-3. Click "Analyze Drive" to start analysis
-4. View results in the tree structure
-5. Right-click items for context menu options
+```
+1. Select Disk Space Analyzer
+2. Choose a drive or browse to a specific folder
+3. Click "Analyze Drive" to start scanning
+4. Navigate the tree view to explore folder sizes
+5. Use right-click context menu for file operations
+```
 
-## Technical Notes
+---
 
-- Uses Windows WlanAPI for Wi-Fi scanning
-- Uses Windows API for disk analysis
-- Threaded operations for non-blocking UI
-- Matplotlib integration for charts and graphs
-- Qt-based modern UI framework
+## 🔧 Build from Source
+
+### Quick Build (Windows)
+
+```bash
+# Using the build script
+build.bat
+```
+
+### Manual Build
+
+```bash
+# Navigate to build tools
+cd build_tools
+
+# Run the build script
+python build.py
+
+# Or use PyInstaller directly
+pyinstaller --onefile --windowed --name "IT Helper" --icon "app_icon.png" --hidden-import multiprocessing src/main.py
+```
+
+**Build Output:**
+
+- Executable: `dist/IT Helper.exe`
+- Size: ~65MB (includes all dependencies)
+- Fully portable, no Python installation required
+
+---
+
+## 🔍 Technical Details
+
+### Architecture
+
+- **Framework**: PySide6 (Qt6) for modern UI
+- **Charts**: Matplotlib for professional visualizations
+- **Threading**: Multi-threaded for responsive UI
+- **APIs**: Windows WlanAPI for Wi-Fi, WinAPI for system info
+
+### System Requirements
+
+- **OS**: Windows 10/11 (64-bit)
+- **RAM**: 4GB minimum, 8GB recommended
+- **Storage**: 100MB free space
+- **Network**: Wi-Fi adapter for wireless scanning features
+
+### Dependencies
+
+```
+PySide6>=6.0.0      # Modern Qt6 framework
+matplotlib>=3.5.0   # Professional charting
+numpy>=1.21.0       # Numerical computing
+psutil>=5.8.0       # System information
+```
+
+---
+
+## 📁 Project Structure
+
+```
+IT Helper/
+├── 📂 src/                     # Source code
+│   ├── 🐍 main.py             # Application entry point
+│   ├── 📶 wifi_scanner_module.py
+│   ├── 📊 wifi_charts_module.py
+│   ├── 💾 disk_analyzer_module.py
+│   ├── 🖥️ system_info_module.py
+│   ├── 🌐 network_scanner_module.py
+│   ├── 🎨 shared_components.py
+│   ├── 📡 wifi_utilities.py
+│   ├── 💿 disk_utilities.py
+│   └── 📝 logger.py
+├── 📂 build_tools/            # Build system
+│   ├── 🔧 build.py
+│   ├── ⚙️ build_config.py
+│   ├── 🖼️ app_icon.png
+│   └── 📋 BUILD_INSTRUCTIONS.md
+├── 📂 dist/                   # Built executable
+├── 📋 requirements.txt        # Dependencies
+├── 🚀 build.bat              # Quick build
+└── 📖 README.md              # This file
+```
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions! Here's how you can help:
+
+1. **🍴 Fork** the repository
+2. **🌿 Create** a feature branch (`git checkout -b feature/amazing-feature`)
+3. **💡 Commit** your changes (`git commit -m 'Add amazing feature'`)
+4. **🚀 Push** to the branch (`git push origin feature/amazing-feature`)
+5. **📝 Open** a Pull Request
+
+### Development Setup
+
+```bash
+# Clone your fork
+git clone https://github.com/yourusername/it-helper.git
+
+# Create virtual environment
+python -m venv venv
+venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run in development mode
+python src/main.py
+```
+
+### Code Style
+
+- Follow PEP 8 guidelines
+- Use meaningful variable names
+- Add docstrings for functions
+- Include type hints where applicable
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 🆘 Support
+
+### 🐛 Found a Bug?
+
+Please [open an issue](../../issues) with:
+
+- Detailed description
+- Steps to reproduce
+- System information
+- Screenshots (if applicable)
+
+### 💡 Feature Request?
+
+We'd love to hear your ideas! [Create a feature request](../../issues) and describe:
+
+- What you'd like to see
+- Why it would be useful
+- How it should work
+
+### 📧 Contact
+
+- **Issues**: [GitHub Issues](../../issues)
+- **Discussions**: [GitHub Discussions](../../discussions)
+
+---
+
+<div align="center">
+
+**⭐ If you find IT Helper useful, please give it a star! ⭐**
+
+Made with ❤️ for the IT community
+
+</div>
