@@ -8,7 +8,7 @@
 ![Python](https://img.shields.io/badge/Python-3.8+-green?logo=python&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 ![Build](https://img.shields.io/badge/Build-Passing-brightgreen)
-![Version](https://img.shields.io/badge/Version-1.0.0-blue)
+![Version](https://img.shields.io/badge/Version-1.1.0-blue)
 
 </div>
 
@@ -31,6 +31,7 @@
 ### 🏠 **Modern Home Screen**
 
 - Clean, intuitive interface with utility buttons
+- **Collapsible Sidebar Navigation**: Hover-to-expand sidebar with smooth animations
 - Easy navigation to all available tools
 - Responsive layout with professional dark theme
 
@@ -74,6 +75,14 @@
 - **Port Scanning**: Identify open ports and services
 - **Network Mapping**: Visual representation of network topology
 
+### 🔧 **SMART Disk Health Monitor**
+
+- **Health Analysis**: Monitor disk health using SMART attributes
+- **Temperature Monitoring**: Real-time disk temperature tracking
+- **Predictive Analysis**: Early warning for potential disk failures
+- **Administrator Mode**: Requires elevated privileges for full functionality
+- **Professional Reports**: Detailed health status and recommendations
+
 ---
 
 ## 🚀 Installation
@@ -113,8 +122,9 @@ python src/main.py
 
 1. Launch IT Helper
 2. Choose a utility from the home screen
-3. Use the sidebar to navigate between tools
-4. Click the 🏠 Home button to return to the main screen
+3. **Collapsible Sidebar**: Hover over the sidebar to expand and see full utility names
+4. Use the sidebar to navigate between tools
+5. Click the 🏠 Home button to return to the main screen
 
 ### Wi-Fi Scanner
 
@@ -143,6 +153,26 @@ python src/main.py
 3. Click "Analyze Drive" to start scanning
 4. Navigate the tree view to explore folder sizes
 5. Use right-click context menu for file operations
+```
+
+### SMART Disk Health
+
+```
+1. Navigate to SMART Disk Health utility
+2. Grant administrator privileges when prompted (required for full functionality)
+3. View real-time disk health status and temperature
+4. Monitor SMART attributes for all connected drives
+5. Review health recommendations and warnings
+```
+
+### Collapsible Sidebar
+
+```
+1. The sidebar starts in collapsed mode, showing only emojis
+2. Hover over the sidebar to smoothly expand and see full utility names
+3. Click any utility button to navigate
+4. The sidebar automatically collapses when you move the mouse away
+5. Enjoy the space-efficient, modern navigation experience
 ```
 
 ---
@@ -185,6 +215,7 @@ pyinstaller --onefile --windowed --name "IT Helper" --icon "app_icon.png" --hidd
 - **Charts**: Matplotlib for professional visualizations
 - **Threading**: Multi-threaded for responsive UI
 - **APIs**: Windows WlanAPI for Wi-Fi, WinAPI for system info
+- **UI Features**: Collapsible sidebar with smooth animations, lazy loading for optimal performance
 
 ### System Requirements
 
@@ -209,24 +240,30 @@ psutil>=5.8.0       # System information
 ```
 IT Helper/
 ├── 📂 src/                     # Source code
-│   ├── 🐍 main.py             # Application entry point
-│   ├── 📶 wifi_scanner_module.py
-│   ├── 📊 wifi_charts_module.py
-│   ├── 💾 disk_analyzer_module.py
-│   ├── 🖥️ system_info_module.py
-│   ├── 🌐 network_scanner_module.py
-│   ├── 🎨 shared_components.py
-│   ├── 📡 wifi_utilities.py
-│   ├── 💿 disk_utilities.py
-│   └── 📝 logger.py
+│   ├── 🐍 main.py             # Application entry point (with collapsible sidebar)
+│   ├── 📶 wifi_scanner_module.py    # Wi-Fi network scanning
+│   ├── 📊 wifi_charts_module.py     # Wi-Fi signal visualization
+│   ├── 💾 disk_analyzer_module.py   # Disk space analysis
+│   ├── 🖥️ system_info_module.py    # System information display
+│   ├── 🌐 network_scanner_module.py # Network device discovery
+│   ├── 🔧 smart_test_module.py      # SMART disk health monitoring
+│   ├── 🎨 shared_components.py      # Reusable UI components
+│   ├── 📡 wifi_utilities.py         # Wi-Fi helper functions
+│   ├── 💿 disk_utilities.py         # Disk analysis utilities
+│   └── 📝 logger.py                 # Application logging
 ├── 📂 build_tools/            # Build system
-│   ├── 🔧 build.py
-│   ├── ⚙️ build_config.py
-│   ├── 🖼️ app_icon.png
-│   └── 📋 BUILD_INSTRUCTIONS.md
-├── 📂 dist/                   # Built executable
-├── 📋 requirements.txt        # Dependencies
-├── 🚀 build.bat              # Quick build
+│   ├── 🔧 build.py            # Main build script
+│   ├── ⚙️ build_config.py    # Build configuration
+│   ├── 🖼️ app_icon.png       # Application icon
+│   ├── 🚀 build.bat          # Windows build script
+│   ├── ⚙️ IT Helper.spec     # PyInstaller spec file
+│   └── 📋 BUILD_INSTRUCTIONS.md # Build documentation
+├── 📂 dist/                   # Built executable output
+├── 📂 build/                  # Build artifacts
+├── 📋 requirements.txt        # Python dependencies
+├── 🚀 build.bat              # Quick build launcher
+├── 📋 SMART_FEATURE_README.md # SMART feature documentation
+├── 📋 OPTIMIZATION_SUMMARY.md # Performance optimizations
 └── 📖 README.md              # This file
 ```
 

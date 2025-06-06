@@ -1265,6 +1265,7 @@ class DiskAnalyzerWidget(QWidget):
         if self.analysis_worker and self.analysis_worker.isRunning():
             self.analysis_worker.stop()
             self.analysis_worker.wait()
+            
         event.accept()
 
     @Slot(dict)
